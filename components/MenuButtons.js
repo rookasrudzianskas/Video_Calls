@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         alignItems: 'center',
+        // justifyContent: 'space-between',
     },
     menuText: {
         color: '#858585',
