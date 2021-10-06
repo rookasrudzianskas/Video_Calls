@@ -1,14 +1,16 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 
 const MenuButtons = () => {
     return (
         <View>
-            <Text>
-                byrookas 🚀
-            </Text>
+
         </View>
     );
 };
 
 export default MenuButtons;
+
+const styles = StyleSheet.create({
+
+});
