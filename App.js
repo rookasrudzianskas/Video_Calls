@@ -5,12 +5,10 @@ import Home from "./screens/Home";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
       <View>
         <Home />
         <StatusBar style="auto" />
       </View>
-    </SafeAreaView>
   );
 }
 
