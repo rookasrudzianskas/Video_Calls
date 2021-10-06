@@ -11,7 +11,7 @@ const contactsMenu = [
     },
     {
         type: 'contact',
-        name: 'Rokas R',
+        name: 'Rokas Rudzianskas',
         photo: 'https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK.jpg',
     },
     {
