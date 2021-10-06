@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import AntDesign from "react-native-vector-icons/AntDesign";
 
 
@@ -31,9 +31,16 @@ const ContactsMenu = () => {
             {contactsMenu.map((contact, index) => (
                 <TouchableOpacity key={index} activeOpacity={0.8}>
                     <View style={styles.row}>
-                        <View style={styles.starredIcon}>
-                            <AntDesign name="star" size={24} color="#efefef" />
-                        </View>
+                        {contact.type === 'starred' ? (
+                            <View style={styles.starredIcon}>
+                                <AntDesign name="star" size={24} color="#efefef" />
+                            </View>
+                        ) : (
+                            <View style={styles.image1}>
+                                <Image style={styles.image} source={{uri: contact?.photo}} />
+                            </View>
+                        )}
+
                         <Text style={styles.text}>
                             {contact?.name}
                         </Text>
@@ -67,5 +74,13 @@ const styles = StyleSheet.create({
         color: 'white',
         paddingLeft: 15,
         fontSize: 18,
+    },
+    image1: {
+
+    },
+    image: {
+        width: 55,
+        height: 55,
+        borderRadius: 20,
     }
 });
