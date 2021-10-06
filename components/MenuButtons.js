@@ -23,17 +23,19 @@ const items = [
         name: "upload",
         title: 'Share Screen',
     },
-]
+];
 
 const MenuButtons = () => {
     return (
         <View style={styles.container}>
-            <View style={styles.buttonContainer}>
-                <TouchableOpacity style={styles.button}>
-                    <FontAwesome name="video-camera" size={23} color="#efefef" />
-                </TouchableOpacity>
-                    <Text style={styles.menuText}>New Meeting</Text>
-            </View>
+            {items.map((item, index) => (
+                <View key={index} style={styles.buttonContainer}>
+                    <TouchableOpacity style={styles.button}>
+                        <FontAwesome name={item?.name} size={23} color="#efefef" />
+                    </TouchableOpacity>
+                    <Text style={styles.menuText}>{item?.title}</Text>
+                </View>
+            ))}
         </View>
     );
 };
@@ -46,6 +48,7 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         borderBottomColor: '#1F1F1F',
         borderBottomWidth: 1,
+        flexDirection: 'row',
     },
     buttonContainer: {
         alignItems: 'center',
