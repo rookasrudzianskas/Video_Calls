@@ -12,7 +12,17 @@ const contactsMenu = [
         type: 'contact',
         name: 'Rokas R',
         photo: 'https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK.jpg',
-    }
+    },
+    {
+        type: 'contact',
+        name: 'Tim Cook',
+        photo: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/%D0%A2%D0%B8%D0%BC_%D0%9A%D1%83%D0%BA_%2802-09-2021%29.jpg',
+    },
+    {
+        type: 'contact',
+        name: 'Craig Federighi',
+        photo: 'https://www.apple.com/leadership/images/bio/craig_federighi_image.png.og.png?1628840083864',
+    },
 ]
 
 const ContactsMenu = () => {
