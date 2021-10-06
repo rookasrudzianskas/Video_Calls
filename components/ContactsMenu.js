@@ -28,16 +28,18 @@ const contactsMenu = [
 const ContactsMenu = () => {
     return (
         <View style={styles.container}>
-             <TouchableOpacity activeOpacity={0.8}>
-                <View style={styles.row}>
-                    <View style={styles.starredIcon}>
-                        <AntDesign name="star" size={24} color="#efefef" />
+            {contactsMenu.map((contact, index) => (
+                <TouchableOpacity key={index} activeOpacity={0.8}>
+                    <View style={styles.row}>
+                        <View style={styles.starredIcon}>
+                            <AntDesign name="star" size={24} color="#efefef" />
+                        </View>
+                        <Text style={styles.text}>
+                            {contact?.name}
+                        </Text>
                     </View>
-                    <Text style={styles.text}>
-                        Start
-                    </Text>
-                </View>
-             </TouchableOpacity>
+                </TouchableOpacity>
+            ))}
         </View>
     );
 };
