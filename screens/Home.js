@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import SearchBar from "../components/SearchBar";
 import Header from "../components/Header";
+import MenuButtons from "../components/MenuButtons";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             {/*    Search Bar   */}
             <SearchBar />
             {/*    contacts menu */}
+            <MenuButtons />
         </View>
     );
 };
