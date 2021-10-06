@@ -10,3 +10,7 @@ const ContactsMenu = () => {
 };
 
 export default ContactsMenu;
+
+const styles = StyleSheet.create({
+
+});
