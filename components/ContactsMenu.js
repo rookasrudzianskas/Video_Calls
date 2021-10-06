@@ -6,6 +6,7 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 const contactsMenu = [
     {
       type: 'starred',
+        name: 'Starred',
 
     },
     {
