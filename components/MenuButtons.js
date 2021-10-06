@@ -8,8 +8,8 @@ const MenuButtons = () => {
             <View style={styles.buttonContainer}>
                 <TouchableOpacity style={styles.button}>
                     <FontAwesome name="video-camera" size={23} color="#efefef" />
-                    <Text style={styles.menuText}>New Meeting</Text>
                 </TouchableOpacity>
+                    <Text style={styles.menuText}>New Meeting</Text>
             </View>
         </View>
     );
@@ -22,12 +22,20 @@ const styles = StyleSheet.create({
 
     },
     buttonContainer: {
-
+        alignItems: 'center',
     },
     menuText: {
-
+        color: '#858585',
+        fontSize: 20,
+        paddingTop: 10,
+        fontWeight: '600',
     },
     button: {
-
+        width: 50,
+        height: 50,
+        backgroundColor: 'orange',
+        borderRadius: 15,
+        justifyContent: 'center',
+        alignItems: 'center',
     }
 });
