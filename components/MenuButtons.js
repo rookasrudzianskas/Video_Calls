@@ -6,9 +6,9 @@ const MenuButtons = () => {
     return (
         <View style={styles.container}>
             <View style={styles.buttonContainer}>
-                <TouchableOpacity>
+                <TouchableOpacity style={styles.button}>
                     <FontAwesome name="video-camera" size={23} color="#efefef" />
-                    <Text>New Meeting</Text>
+                    <Text style={styles.menuText}>New Meeting</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -22,6 +22,12 @@ const styles = StyleSheet.create({
 
     },
     buttonContainer: {
+
+    },
+    menuText: {
+
+    },
+    button: {
 
     }
 });
