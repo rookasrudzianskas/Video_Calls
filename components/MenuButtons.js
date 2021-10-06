@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#1F1F1F',
         borderBottomWidth: 1,
         flexDirection: 'row',
+        justifyContent: 'space-between',
     },
     buttonContainer: {
         alignItems: 'center',
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
     },
     menuText: {
         color: '#858585',
-        fontSize: 20,
+        fontSize: 13,
         paddingTop: 10,
         fontWeight: '600',
     },
