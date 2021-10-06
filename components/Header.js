@@ -6,6 +6,7 @@ const Header = () => {
     return (
         <View style={styles.container}>
             <Entypo name="notification" size={30} color="#efefef" />
+            <Entypo name="new-message" size={30} color="#efefef" />
         </View>
     );
 };
