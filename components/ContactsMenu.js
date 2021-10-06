@@ -2,6 +2,19 @@ import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import AntDesign from "react-native-vector-icons/AntDesign";
 
+
+const contactsMenu = [
+    {
+      type: 'starred',
+
+    },
+    {
+        type: 'contact',
+        name: 'Rokas R',
+        photo: 'https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK.jpg',
+    }
+]
+
 const ContactsMenu = () => {
     return (
         <View style={styles.container}>
