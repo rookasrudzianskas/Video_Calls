@@ -4,9 +4,9 @@ import {Text, View} from 'react-native';
 const Home = () => {
     return (
         <View>
-        {/*    Header   */}
-        {/*    Search Bar   */}
-
+            {/*    Header   */}
+            {/*    Search Bar   */}
+            {/*    contacts menu */}
         </View>
     );
 };
