@@ -26,7 +26,9 @@ const styles = StyleSheet.create({
 
     },
     row: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginTop: 20,
+        alignItems: 'center',
     },
     starredIcon: {
         backgroundColor: '#333333',
@@ -34,6 +36,11 @@ const styles = StyleSheet.create({
         height: 55,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 15,
+        borderRadius: 20,
+    },
+    text: {
+        color: 'white',
+        paddingLeft: 15,
+        fontSize: 18,
     }
 });
