@@ -5,7 +5,7 @@ const SearchBar = () => {
     return (
         <View>
             <Text>
-                byrookas 🚀
+                SearchBar
             </Text>
         </View>
     );

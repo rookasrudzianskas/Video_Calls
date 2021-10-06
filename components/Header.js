@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <View>
             <Text>
-                byrookas 🚀
+                Header
             </Text>
         </View>
     );
