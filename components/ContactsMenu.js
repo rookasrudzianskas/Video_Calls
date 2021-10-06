@@ -24,5 +24,16 @@ export default ContactsMenu;
 const styles = StyleSheet.create({
     container: {
 
+    },
+    row: {
+        flexDirection: 'row'
+    },
+    starredIcon: {
+        backgroundColor: '#333333',
+        width: 55,
+        height: 55,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 15,
     }
 });
