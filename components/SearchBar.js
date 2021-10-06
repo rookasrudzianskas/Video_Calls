@@ -24,6 +24,9 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     textSearchBar: {
+        color: '#858585',
+        paddingLeft: 10,
+        fontSize: 20,
 
     },
 });
