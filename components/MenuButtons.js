@@ -7,21 +7,25 @@ const items = [
         id: 1,
         name: "video-camera",
         title: 'New Meeting',
+        customColor: 'orange'
     },
     {
         id: 2,
         name: "plus-square",
         title: 'Join',
+        // customColor: 'purple'
     },
     {
         id: 3,
         name: "calendar",
         title: 'Schedule',
+        // customColor: 'purple'
     },
     {
         id: 4,
         name: "upload",
         title: 'Share Screen',
+        // customColor: 'purple'
     },
 ];
 
@@ -30,7 +34,10 @@ const MenuButtons = () => {
         <View style={styles.container}>
             {items.map((item, index) => (
                 <View key={index} style={styles.buttonContainer}>
-                    <TouchableOpacity style={styles.button}>
+                    <TouchableOpacity style={{
+                        ...styles.button,
+                        backgroundColor: item.customColor ? item.customColor : '#0470DC'
+                    }}>
                         <FontAwesome name={item?.name} size={23} color="#efefef" />
                     </TouchableOpacity>
                     <Text style={styles.menuText}>{item?.title}</Text>
@@ -53,6 +60,7 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         alignItems: 'center',
+        flex: 1,
         // justifyContent: 'space-between',
     },
     menuText: {
