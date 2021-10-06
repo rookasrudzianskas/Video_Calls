@@ -3,7 +3,7 @@ import {Text, View, StyleSheet} from 'react-native';
 
 const ContactsMenu = () => {
     return (
-        <View>
+        <View style={styles.container}>
 
         </View>
     );
@@ -12,5 +12,7 @@ const ContactsMenu = () => {
 export default ContactsMenu;
 
 const styles = StyleSheet.create({
+    container: {
 
+    }
 });
