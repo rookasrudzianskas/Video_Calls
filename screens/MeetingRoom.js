@@ -13,15 +13,15 @@ const MeetingRoom = () => {
     let socket;
 
     const joinRoom = () => {
-        startCameras();
+        __startCamera();
             socket.emit('join-room', {
                 roomId: roomId,
                 userName: name,
             });
     }
 
-    const startCameras = () => {
-
+    const __startCamera = () => {
+        setStartCamera(true);
     }
 
     useEffect(() => {
