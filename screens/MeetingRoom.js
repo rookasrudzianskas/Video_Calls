@@ -7,7 +7,7 @@ const MeetingRoom = () => {
     const [roomId, setRoomId] = useState();
 
     useEffect(() => {
-
+        // console.log('Yooo');
     },[]);
 
     return (
