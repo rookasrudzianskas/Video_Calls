@@ -9,10 +9,10 @@ const MeetingRoom = () => {
             <View style={styles.container}>
                 <View style={styles.startMeetingContainer}>
                     <View style={styles.info}>
-                        <TextInput placeholder="Enter name" style={styles.textInput} value={name} onChangeText={text => setName(text)}/>
+                        <TextInput placeholder="Enter name" placeholderTextColor={'#767476'} style={styles.textInput} value={name} onChangeText={text => setName(text)}/>
                     </View>
                     <View style={styles.info}>
-                        <TextInput placeholder="Enter room id" style={styles.textInput} value={roomId} onChangeText={text => setRoomId(text)} />
+                        <TextInput placeholder="Enter room id"  placeholderTextColor={'#767476'} style={styles.textInput} value={roomId} onChangeText={text => setRoomId(text)} />
                     </View>
                 </View>
             </View>
