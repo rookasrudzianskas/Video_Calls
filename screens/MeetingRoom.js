@@ -65,7 +65,7 @@ const MeetingRoom = () => {
     return (
             <View style={styles.container}>
                 {startCamera ? (
-                    <SafeAreaView>
+                    <SafeAreaView style={{flex: 1,}}>
                             <View style={{flex: 1,}}>
                                 <Camera style={styles.camera} type={type}>
                                     <View style={styles.buttonContainer}>
