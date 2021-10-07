@@ -18,4 +18,4 @@ function Navigation() {
     );
 }
 
-export default App;
+export default Navigation;
