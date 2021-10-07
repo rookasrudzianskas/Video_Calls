@@ -85,19 +85,21 @@ const MeetingRoom = () => {
                             </Camera>
 
                             <View style={styles.menu}>
-                                <TouchableOpacity style={{
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    height: 50,
-                                    marginTop: 15,
-                                }} activeOpacity={0.8}>
-                                    <FontAwesome name="microphone" size={24} color="#efefef" />
-                                    <Text style={{
-                                        color: 'white',
-                                        marginTop: 10,
+                                {menuIcons.map((icon, index) => (
+                                    <TouchableOpacity key={index} style={{
+                                        justifyContent: 'center',
+                                        alignItems: 'center',
+                                        height: 50,
+                                        marginTop: 15,
+                                    }} activeOpacity={0.8}>
+                                        <FontAwesome name={icon?.name} size={24} color="#efefef" />
+                                        <Text style={{
+                                            color: 'white',
+                                            marginTop: 10,
 
-                                    }}>Camera</Text>
-                                </TouchableOpacity>
+                                        }}>{icon?.title}</Text>
+                                    </TouchableOpacity>
+                                ))}
                             </View>
 
                     </SafeAreaView>
@@ -143,6 +145,8 @@ const styles = StyleSheet.create({
         borderRadius: 20,
     },
     menu: {
-
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 });
