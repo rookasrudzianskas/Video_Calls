@@ -2,12 +2,14 @@ import React, {useEffect, useState} from 'react';
 import {Text, View, StyleSheet, SafeAreaView, TextInput, TouchableOpacity} from 'react-native';
 import StartMeeting from "../components/StartMeeting";
 import {io} from 'socket.io-client';
+import {Camera} from "expo-camera";
 
 const MeetingRoom = () => {
     const [name, setName] = useState('');
     const [roomId, setRoomId] = useState('');
     const [activeUsers, setActiveUsers] = useState();
-    const [startCamera, setStartCamera] = useState(false);
+    const [startCamera, setStartCamera] = useState(true);
+    const [type, setType] = useState(Camera.Constants.Type.back);
 
 
     let socket;
@@ -38,7 +40,23 @@ const MeetingRoom = () => {
     return (
             <View style={styles.container}>
                 {startCamera ? (
-                    <Text>Start a camera</Text>
+                    <View style={styles.container}>
+                        <Camera style={styles.camera} type={type}>
+                            <View style={styles.buttonContainer}>
+                                <TouchableOpacity
+                                    style={styles.button}
+                                    onPress={() => {
+                                        setType(
+                                            type === Camera.Constants.Type.back
+                                                ? Camera.Constants.Type.front
+                                                : Camera.Constants.Type.back
+                                        );
+                                    }}>
+                                    <Text style={styles.text}> Flip </Text>
+                                </TouchableOpacity>
+                            </View>
+                        </Camera>
+                    </View>
                 ) : (
                     // start meeting section
                     <StartMeeting joinRoom={joinRoom} name={name} roomId={roomId} setName={setName} setRoomId={setRoomId} />
@@ -49,10 +67,29 @@ const MeetingRoom = () => {
 
 export default MeetingRoom;
 
+
+
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         backgroundColor: '#1c1c1c',
+    },
+    camera: {
         flex: 1,
     },
+    buttonContainer: {
+        flex: 1,
+        backgroundColor: 'transparent',
+        flexDirection: 'row',
+        margin: 20,
+    },
+    button: {
+        flex: 0.1,
+        alignSelf: 'flex-end',
+        alignItems: 'center',
+    },
+    text: {
+        fontSize: 18,
+        color: 'white',
+    },
 });
-
