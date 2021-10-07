@@ -22,7 +22,7 @@ const contactsMenu = [
     {
         type: 'contact',
         name: 'Craig Federighi',
-        photo: 'https://www.apple.com/leadership/images/bio/craig_federighi_image.png.og.png?1628840083864',
+        photo: 'https://www.frontpagetech.com/wp-content/uploads/2021/08/WSJ-Craig-Interview-on-Child-Safety.jpg',
     },
 ]
 
