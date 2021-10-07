@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#1c1c1c',
     },
     camera: {
-        flex: 1,
+        width: '100%',
+        height: 600,
     },
     buttonContainer: {
         flex: 1,
