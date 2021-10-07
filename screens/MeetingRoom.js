@@ -35,6 +35,7 @@ const MeetingRoom = () => {
                 {startCamera ? (
                     <Text>Start a camera</Text>
                 ) : (
+                    // start meeting section
                     <StartMeeting joinRoom={joinRoom} name={name} roomId={roomId} setName={setName} setRoomId={setRoomId} />
                 )}
             </View>
