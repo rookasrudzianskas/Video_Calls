@@ -42,7 +42,6 @@ const MeetingRoom = () => {
             <View style={styles.container}>
                 {startCamera ? (
                     <SafeAreaView>
-                        <View style={styles.container}>
                             <Camera style={styles.camera} type={type}>
                                 <View style={styles.buttonContainer}>
                                     <TouchableOpacity
@@ -62,13 +61,14 @@ const MeetingRoom = () => {
                             </Camera>
 
                             <View style={styles.menu}>
-                                <TouchableOpacity activeOpacity={0.8}>
+                                <TouchableOpacity style={{
+
+                                }} activeOpacity={0.8}>
                                     <FontAwesome name="microphone" size={24} color="#efefef" />
                                     <Text style={{}}>Camera</Text>
                                 </TouchableOpacity>
                             </View>
 
-                        </View>
                     </SafeAreaView>
                 ) : (
                     // start meeting section
