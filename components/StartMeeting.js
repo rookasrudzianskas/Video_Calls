@@ -16,7 +16,7 @@ const StartMeeting = ({name, roomId, setName, setRoomId, joinRoom}) => {
             </View>
             {/*    button   */}
             <View style={{alignItems: 'center',}}>
-                <TouchableOpacity onPress={() => joinRoom(name, roomId)} style={styles.startMeetingButton}>
+                <TouchableOpacity onPress={() => joinRoom()} style={styles.startMeetingButton}>
                     <Text style={styles.startMeetingText}>Start Meeting</Text>
                 </TouchableOpacity>
             </View>
