@@ -11,7 +11,7 @@ const MeetingRoom = () => {
 
     useEffect(() => {
         console.log('Yooo');
-        const API_URL = 'http://0b7d-88-135-26-66.ngrok.io';
+        const API_URL = 'https://0b7d-88-135-26-66.ngrok.io';
         console.log('Rokas is going');
         socket = io(`${API_URL}`);
         console.log('Rokas is going forward');
