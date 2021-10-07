@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "./screens/Home";
+import MeetingRoom from "./screens/MeetingRoom";
 
 const Stack = createNativeStackNavigator();
 
@@ -11,6 +12,7 @@ function Navigation() {
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Room" component={MeetingRoom} />
             </Stack.Navigator>
         </NavigationContainer>
     );
