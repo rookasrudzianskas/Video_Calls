@@ -10,13 +10,18 @@ const MeetingRoom = () => {
     let socket;
 
     useEffect(() => {
-        console.log('Yooo');
+        // console.log('Yooo');
         const API_URL = 'https://0b7d-88-135-26-66.ngrok.io';
-        console.log('Rokas is going');
+        // console.log('Rokas is going');
         socket = io(`${API_URL}`);
-        console.log('Rokas is going forward');
-        socket.on('connection', (socket) => console.log("Connected"));
-        console.log('Rokas is going forward to space');
+        // console.log('Rokas is going forward');
+        socket.on('connection', (socket) => {
+            console.log('a user connected');
+            socket.on('disconnect', () => {
+                console.log('user disconnected');
+            });
+        });
+        // console.log('Rokas is going forward to space');
     },[]);
 
     return (
