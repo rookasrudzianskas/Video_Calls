@@ -29,11 +29,14 @@ const items = [
     },
 ];
 
-const openMeeting = () => {
 
-}
 
-const MenuButtons = () => {
+const MenuButtons = ({navigation}) => {
+
+    const openMeeting = () => {
+        navigation.navigate('Room');
+    }
+
     return (
         <View style={styles.container}>
             {items.map((item, index) => (
