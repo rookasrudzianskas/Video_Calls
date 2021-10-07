@@ -9,6 +9,9 @@ const MeetingRoom = () => {
 
     useEffect(() => {
         // console.log('Yooo');
+        const API_URL = 'http://localhost:3000/';
+        var socket = io(`${API_URL}`);
+        socket.on('connection', (socket) => console.log("Connected"));
     },[]);
 
     return (
