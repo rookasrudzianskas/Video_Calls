@@ -98,6 +98,11 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 18,
-        color: 'white',
+        color: 'black',
+        backgroundColor: '#efefef',
+
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 20,
     },
 });
