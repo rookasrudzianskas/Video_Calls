@@ -6,6 +6,7 @@ import {io} from 'socket.io-client';
 const MeetingRoom = () => {
     const [name, setName] = useState('');
     const [roomId, setRoomId] = useState('');
+    const [activeUsers, setActiveUsers] = useState();
 
     let socket;
 
@@ -20,6 +21,10 @@ const MeetingRoom = () => {
         const API_URL = 'https://0b7d-88-135-26-66.ngrok.io';
         socket = io(`${API_URL}`);
         socket.on('connection', () => console.log("Connected 🚀"));
+        socket.on('all-users', users => {
+            console.log("Active users");
+            setActiveUsers(users);
+        });
         // console.log('hello?');
     },[]);
 
