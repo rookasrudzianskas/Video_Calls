@@ -7,6 +7,8 @@ const MeetingRoom = () => {
     const [name, setName] = useState('');
     const [roomId, setRoomId] = useState('');
     const [activeUsers, setActiveUsers] = useState();
+    const [startCamera, setStartCamera] = useState(false);
+
 
     let socket;
 
@@ -30,7 +32,11 @@ const MeetingRoom = () => {
 
     return (
             <View style={styles.container}>
-                <StartMeeting joinRoom={joinRoom} name={name} roomId={roomId} setName={setName} setRoomId={setRoomId} />
+                {startCamera ? (
+                    <Text>Start a camera</Text>
+                ) : (
+                    <StartMeeting joinRoom={joinRoom} name={name} roomId={roomId} setName={setName} setRoomId={setRoomId} />
+                )}
             </View>
     );
 };

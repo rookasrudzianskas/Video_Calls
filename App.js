@@ -10,7 +10,6 @@ export default function App() {
 
     const [hasPermission, setHasPermission] = useState(null);
     const [type, setType] = useState(Camera.Constants.Type.back);
-    const [startCamera, setStartCamera] = useState(false);
 
     useEffect(() => {
         (async () => {
