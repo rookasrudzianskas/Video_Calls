@@ -40,28 +40,30 @@ const MeetingRoom = () => {
     return (
             <View style={styles.container}>
                 {startCamera ? (
-                    <View style={styles.container}>
-                        <Camera style={styles.camera} type={type}>
-                            <View style={styles.buttonContainer}>
-                                <TouchableOpacity
-                                    style={styles.button}
-                                    onPress={() => {
-                                        setType(
-                                            type === Camera.Constants.Type.back
-                                                ? Camera.Constants.Type.front
-                                                : Camera.Constants.Type.back
-                                        );
-                                    }}>
-                                    <Text style={styles.text}> Flip </Text>
-                                </TouchableOpacity>
-                            </View>
-                        </Camera>
+                    <SafeAreaView>
+                        <View style={styles.container}>
+                            <Camera style={styles.camera} type={type}>
+                                <View style={styles.buttonContainer}>
+                                    <TouchableOpacity
+                                        style={styles.button}
+                                        onPress={() => {
+                                            setType(
+                                                type === Camera.Constants.Type.back
+                                                    ? Camera.Constants.Type.front
+                                                    : Camera.Constants.Type.back
+                                            );
+                                        }}>
+                                        <Text style={styles.text}> Flip </Text>
+                                    </TouchableOpacity>
+                                </View>
+                            </Camera>
 
-                        <View>
+                            <View>
+
+                            </View>
 
                         </View>
-
-                    </View>
+                    </SafeAreaView>
                 ) : (
                     // start meeting section
                     <StartMeeting joinRoom={joinRoom} name={name} roomId={roomId} setName={setName} setRoomId={setRoomId} />
