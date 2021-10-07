@@ -9,13 +9,11 @@ const MeetingRoom = () => {
 
     let socket;
 
-    const joinRoom = (name, roomId) => {
-        if(name && roomId) {
+    const joinRoom = () => {
             socket.emit('join-room', {
                 roomId: roomId,
                 userName: name,
-            })
-        }
+            });
     }
 
     useEffect(() => {
