@@ -29,12 +29,16 @@ const items = [
     },
 ];
 
+const openMeeting = () => {
+
+}
+
 const MenuButtons = () => {
     return (
         <View style={styles.container}>
             {items.map((item, index) => (
                 <View key={index} style={styles.buttonContainer}>
-                    <TouchableOpacity style={{
+                    <TouchableOpacity onPress={() => openMeeting()} style={{
                         ...styles.button,
                         backgroundColor: item.customColor ? item.customColor : '#0470DC'
                     }}>
