@@ -56,6 +56,11 @@ const MeetingRoom = () => {
                                 </TouchableOpacity>
                             </View>
                         </Camera>
+
+                        <View>
+
+                        </View>
+
                     </View>
                 ) : (
                     // start meeting section
