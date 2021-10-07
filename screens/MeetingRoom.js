@@ -5,6 +5,30 @@ import {io} from 'socket.io-client';
 import {Camera} from "expo-camera";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
+const menuIcons = [
+    {
+        id: '1',
+        name: 'microphone',
+        title: 'Mute',
+        customColor: '#efefef',
+    },
+    {
+        id: '2',
+        name: 'video-camera',
+        title: 'Stop Video',
+    },
+    {
+        id: '3',
+        name: 'video-camera',
+        title: 'Stop Video',
+    },
+    {
+        id: '4',
+        name: 'video-camera',
+        title: 'Stop Video',
+    },
+]
+
 const MeetingRoom = () => {
     const [name, setName] = useState('');
     const [roomId, setRoomId] = useState('');
