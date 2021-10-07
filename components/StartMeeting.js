@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity, TextInput} from 'react-native';
 
-const StartMeeting = () => {
+const StartMeeting = ({name, roomId, setName, setRoomId}) => {
 
 
 
