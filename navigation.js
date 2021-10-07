@@ -7,10 +7,15 @@ import MeetingRoom from "./screens/MeetingRoom";
 
 const Stack = createNativeStackNavigator();
 
+
+const screenOptions = {
+    headerShown: false,
+};
+
 function Navigation() {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
+            <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Room" component={MeetingRoom} />
             </Stack.Navigator>
