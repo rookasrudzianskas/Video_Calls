@@ -62,7 +62,8 @@ const MeetingRoom = () => {
 
                             <View style={styles.menu}>
                                 <TouchableOpacity style={{
-
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
                                 }} activeOpacity={0.8}>
                                     <FontAwesome name="microphone" size={24} color="#efefef" />
                                     <Text style={{}}>Camera</Text>
