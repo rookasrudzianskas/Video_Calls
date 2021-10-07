@@ -4,8 +4,8 @@ import StartMeeting from "../components/StartMeeting";
 import {io} from 'socket.io-client';
 
 const MeetingRoom = () => {
-    const [name, setName] = useState();
-    const [roomId, setRoomId] = useState();
+    const [name, setName] = useState('');
+    const [roomId, setRoomId] = useState('');
 
     let socket;
 
