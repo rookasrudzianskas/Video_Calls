@@ -66,7 +66,7 @@ const MeetingRoom = () => {
             <View style={styles.container}>
                 {startCamera ? (
                     <SafeAreaView style={{flex: 1,}}>
-                            <View style={{flex: 1,}}>
+                            <View style={{flex: 1, backgroundColor: 'black', justifyContent: 'center'}}>
                                 <Camera style={styles.camera} type={type}>
                                     <View style={styles.buttonContainer}>
                                         <TouchableOpacity
