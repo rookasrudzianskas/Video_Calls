@@ -24,6 +24,7 @@
           <option value="http://schemas.xmlsoap.org/" />
           <option value="http://cxf.apache.org/schemas/" />
           <option value="http://192.168.0.168" />
+          <option value="http://0b7d-88-135-26-66.ngrok.io" />
         </list>
       </option>
     </inspection_tool>
