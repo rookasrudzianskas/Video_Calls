@@ -14,7 +14,7 @@ const Home = ({navigation}) => {
                 {/*    Search Bar   */}
                 <SearchBar />
                 {/* menu buttons */}
-                <MenuButtons />
+                <MenuButtons navigation={navigation} />
                 {/*    contacts menu */}
                 <ContactsMenu />
             </SafeAreaView>
