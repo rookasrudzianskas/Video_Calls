@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
     },
     startMeetingText: {
         color: 'white',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     }
 });
