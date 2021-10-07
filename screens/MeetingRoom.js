@@ -66,23 +66,25 @@ const MeetingRoom = () => {
             <View style={styles.container}>
                 {startCamera ? (
                     <SafeAreaView>
-                            <Camera style={styles.camera} type={type}>
-                                <View style={styles.buttonContainer}>
-                                    <TouchableOpacity
-                                        style={styles.button}
-                                        onPress={() => {
-                                            setType(
-                                                type === Camera.Constants.Type.back
-                                                    ? Camera.Constants.Type.front
-                                                    : Camera.Constants.Type.back
-                                            );
-                                        }}>
-                                        <View style={{width: 50, height: 50, alignItems: 'center', justifyContent: 'center'}}>
-                                            <Text style={styles.text}> Flip </Text>
-                                        </View>
-                                    </TouchableOpacity>
-                                </View>
-                            </Camera>
+                            <View style={{flex: 1,}}>
+                                <Camera style={styles.camera} type={type}>
+                                    <View style={styles.buttonContainer}>
+                                        <TouchableOpacity
+                                            style={styles.button}
+                                            onPress={() => {
+                                                setType(
+                                                    type === Camera.Constants.Type.back
+                                                        ? Camera.Constants.Type.front
+                                                        : Camera.Constants.Type.back
+                                                );
+                                            }}>
+                                            <View style={{width: 50, height: 50, alignItems: 'center', justifyContent: 'center'}}>
+                                                <Text style={styles.text}> Flip </Text>
+                                            </View>
+                                        </TouchableOpacity>
+                                    </View>
+                                </Camera>
+                            </View>
 
                             <View style={styles.menu}>
                                 {menuIcons.map((icon, index) => (
