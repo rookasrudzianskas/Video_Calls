@@ -19,13 +19,13 @@ const MeetingRoom = () => {
     useEffect(() => {
         const API_URL = 'https://0b7d-88-135-26-66.ngrok.io';
         socket = io(`${API_URL}`);
-        socket.on('connection', (socket) => console.log("Connected 🚀"));
+        socket.on('connection', () => console.log("Connected 🚀"));
         // console.log('hello?');
     },[]);
 
     return (
             <View style={styles.container}>
-                <StartMeeting joinRoom={joinRoom}s name={name} roomId={roomId} setName={setName} setRoomId={setRoomId} />
+                <StartMeeting joinRoom={joinRoom} name={name} roomId={roomId} setName={setName} setRoomId={setRoomId} />
             </View>
     );
 };
