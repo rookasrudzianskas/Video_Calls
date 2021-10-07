@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Text, View, StyleSheet, SafeAreaView, TextInput, TouchableOpacity} from 'react-native';
 import StartMeeting from "../components/StartMeeting";
+import {io} from 'socket.io-client';
 
 const MeetingRoom = () => {
     const [name, setName] = useState();
