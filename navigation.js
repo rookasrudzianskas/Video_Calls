@@ -15,8 +15,12 @@ const screenOptions = {
 function Navigation() {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={Home}  screenOptions={screenOptions}/>
+            <Stack.Navigator initialRouteName="Home" options={{
+
+            }}>
+                <Stack.Screen name="Home" component={Home} options={{
+                    headerShown: false,
+                }}/>
                 <Stack.Screen name="Room" component={MeetingRoom} options={{
                     title: 'Start a Meeting',
                     headerStyle: {
