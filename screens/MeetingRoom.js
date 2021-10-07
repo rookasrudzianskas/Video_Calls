@@ -63,8 +63,8 @@ const MeetingRoom = () => {
 
                             <View style={styles.menu}>
                                 <TouchableOpacity activeOpacity={0.8}>
-                                    <FontAwesome name="microphone" size={24} color="white" />
-                                    <Text>Camera</Text>
+                                    <FontAwesome name="microphone" size={24} color="#efefef" />
+                                    <Text style={{}}>Camera</Text>
                                 </TouchableOpacity>
                             </View>
 
