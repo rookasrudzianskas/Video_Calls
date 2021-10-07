@@ -31,7 +31,7 @@ const MeetingRoom = () => {
         socket = io(`${API_URL}`);
         socket.on('connection', () => console.log("Connected 🚀"));
         socket.on('all-users', users => {
-            console.log("Active users");
+            // console.log("Active users");
             setActiveUsers(users);
         });
         // console.log('hello?');
