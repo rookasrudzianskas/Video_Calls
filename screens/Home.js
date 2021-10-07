@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import MenuButtons from "../components/MenuButtons";
 import ContactsMenu from "../components/ContactsMenu";
 
-const Home = () => {
+const Home = ({navigation}) => {
     return (
         <View style={styles.container}>
             <SafeAreaView style={{height: '100%'}}>
