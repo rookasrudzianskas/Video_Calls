@@ -17,7 +17,7 @@ const MeetingRoom = () => {
                     </View>
                 </View>
             {/*    button   */}
-                <View>
+                <View style={{alignItems: 'center',}}>
                     <TouchableOpacity onPress={() => {}} style={styles.startMeetingButton}>
                         <Text style={styles.startMeetingText}>Start Meeting</Text>
                     </TouchableOpacity>
@@ -52,7 +52,10 @@ const styles = StyleSheet.create({
         height: 15,
     },
     startMeetingButton: {
-
+        width: 350,
+        marginTop: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     startMeetingText: {
         color: 'white',
