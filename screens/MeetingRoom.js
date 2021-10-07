@@ -1,10 +1,14 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Text, View, StyleSheet, SafeAreaView, TextInput, TouchableOpacity} from 'react-native';
 import StartMeeting from "../components/StartMeeting";
 
 const MeetingRoom = () => {
     const [name, setName] = useState();
     const [roomId, setRoomId] = useState();
+
+    useEffect(() => {
+
+    },[]);
 
     return (
             <View style={styles.container}>
