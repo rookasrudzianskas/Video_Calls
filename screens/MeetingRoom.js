@@ -19,13 +19,13 @@ const menuIcons = [
     },
     {
         id: '3',
-        name: 'video-camera',
-        title: 'Stop Video',
+        name: 'upload',
+        title: 'Share Content',
     },
     {
         id: '4',
-        name: 'video-camera',
-        title: 'Stop Video',
+        name: 'group',
+        title: 'Participants',
     },
 ]
 
