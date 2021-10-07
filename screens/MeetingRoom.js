@@ -15,12 +15,7 @@ const MeetingRoom = () => {
         // console.log('Rokas is going');
         socket = io(`${API_URL}`);
         // console.log('Rokas is going forward');
-        socket.on('connection', (socket) => {
-            console.log('a user connected');
-            socket.on('disconnect', () => {
-                console.log('user disconnected');
-            });
-        });
+        socket.on('connection', (socket) => console.log("Connected 🚀"));
         // console.log('Rokas is going forward to space');
     },[]);
 
