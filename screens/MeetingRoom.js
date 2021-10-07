@@ -53,7 +53,9 @@ const MeetingRoom = () => {
                                                     : Camera.Constants.Type.back
                                             );
                                         }}>
-                                        <Text style={styles.text}> Flip </Text>
+                                        <View style={{width: 50, height: 50, alignItems: 'center', justifyContent: 'center'}}>
+                                            <Text style={styles.text}> Flip </Text>
+                                        </View>
                                     </TouchableOpacity>
                                 </View>
                             </Camera>
