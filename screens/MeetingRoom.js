@@ -3,6 +3,7 @@ import {Text, View, StyleSheet, SafeAreaView, TextInput} from 'react-native';
 
 const MeetingRoom = () => {
     const [name, setName] = useState();
+    const [id, setId] = useState();
 
     return (
             <View style={styles.container}>
@@ -11,7 +12,7 @@ const MeetingRoom = () => {
                         <TextInput placeholder="Enter name" style={styles.textInput} value={name} onChangeText={text => setName(text)}/>
                     </View>
                     <View style={styles.info}>
-                        <TextInput placeholder="Enter room id" style={styles.textInput} value={name} onChangeText={text => setName(text)} />
+                        <TextInput placeholder="Enter room id" style={styles.textInput} value={id} onChangeText={text => setName(setId)} />
                     </View>
                 </View>
             </View>
@@ -29,7 +30,14 @@ const styles = StyleSheet.create({
 
     },
     info: {
-
+        width: '100%',
+        backgroundColor: '#373538',
+        height: 50,
+        borderTopWidth: 1,
+        borderBottomWidth: 1,
+        borderColor: '#484648',
+        padding: 20,
+        justifyContent: 'center',
     },
     textInput: {
 
