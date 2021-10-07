@@ -7,6 +7,7 @@ const MeetingRoom = () => {
 
     return (
             <View style={styles.container}>
+                {/* start meeting */}
                 <View style={styles.startMeetingContainer}>
                     <View style={styles.info}>
                         <TextInput placeholder="Enter name" placeholderTextColor={'#767476'} style={styles.textInput} value={name} onChangeText={text => setName(text)}/>
@@ -15,6 +16,8 @@ const MeetingRoom = () => {
                         <TextInput placeholder="Enter room id"  placeholderTextColor={'#767476'} style={styles.textInput} value={roomId} onChangeText={text => setRoomId(text)} />
                     </View>
                 </View>
+            {/*    button   */}
+
             </View>
     );
 };
