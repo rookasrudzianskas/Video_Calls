@@ -123,6 +123,7 @@ const styles = StyleSheet.create({
     camera: {
         width: '100%',
         height: 600,
+
     },
     buttonContainer: {
         flex: 1,
@@ -146,7 +147,6 @@ const styles = StyleSheet.create({
     },
     menu: {
         flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
     },
 });
