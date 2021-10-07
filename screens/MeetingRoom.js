@@ -12,7 +12,7 @@ const MeetingRoom = () => {
                         <TextInput placeholder="Enter name" style={styles.textInput} value={name} onChangeText={text => setName(text)}/>
                     </View>
                     <View style={styles.info}>
-                        <TextInput placeholder="Enter room id" style={styles.textInput} value={id} onChangeText={text => setName(setId)} />
+                        <TextInput placeholder="Enter room id" style={styles.textInput} value={id} onChangeText={text => setId(text)} />
                     </View>
                 </View>
             </View>
@@ -40,6 +40,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     textInput: {
-
+        color: 'white',
+        fontSize: 18,
+        height: 15,
     }
 });
