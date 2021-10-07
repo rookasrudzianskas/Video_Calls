@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, View, StyleSheet, SafeAreaView, TextInput} from 'react-native';
+import {Text, View, StyleSheet, SafeAreaView, TextInput, TouchableOpacity} from 'react-native';
 
 const MeetingRoom = () => {
     const [name, setName] = useState();
@@ -17,7 +17,11 @@ const MeetingRoom = () => {
                     </View>
                 </View>
             {/*    button   */}
-
+                <View>
+                    <TouchableOpacity onPress={() => {}} style={styles.startMeetingButton}>
+                        <Text style={styles.startMeetingText}>Start Meeting</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
     );
 };
@@ -46,5 +50,11 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 18,
         height: 15,
+    },
+    startMeetingButton: {
+
+    },
+    startMeetingText: {
+        color: 'white',
     }
 });
