@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {Text, View, StyleSheet, SafeAreaView, TextInput} from 'react-native';
+import {Text, View, StyleSheet, SafeAreaView, TextInput, TouchableOpacity} from 'react-native';
 import ChatHeader from "./ChatHeader";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 const Chat = ({setModalVisible}) => {
     const [messageText, setMessageText] = useState();
@@ -16,7 +17,10 @@ const Chat = ({setModalVisible}) => {
                     <View style={styles.chatFormContainer}>
                         <Text style={{color: 'white'}}>Send to: Everyone</Text>
                         <View style={styles.chatForm}>
-                            <TextInput placeholderTextColor={'#efefef'} value={messageText} onChangeText={(text) => setMessageText(text)} placeholder="Tap here to chat" style={styles.textInput} />
+                            <TextInput placeholderTextColor={'#595859'} value={messageText} onChangeText={(text) => setMessageText(text)} placeholder="Tap here to chat" style={styles.textInput} />
+                            <TouchableOpacity>
+                                <FontAwesome name="send" size={24} color="#efefef" />
+                            </TouchableOpacity>
                         </View>
                     </View>
                 </SafeAreaView>
