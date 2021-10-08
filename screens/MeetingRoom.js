@@ -66,6 +66,7 @@ const MeetingRoom = () => {
             <View style={styles.container}>
                 {startCamera ? (
                     <SafeAreaView style={{flex: 1,}}>
+                        <View style={{}}>
                             <View style={{flex: 1, backgroundColor: 'black', justifyContent: 'center', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', }}>
                                 <Camera style={{height: activeUsers?.length === 0 ? 600 : 200, width: activeUsers?.length === 0 ? "100%" : 200 }} type={type}>
                                     <View style={styles.buttonContainer}>
@@ -91,6 +92,7 @@ const MeetingRoom = () => {
                                     </View>
                                 ))}
                             </View>
+                        </View>
 
                             <View style={styles.menu}>
                                 {menuIcons.map((icon, index) => (
