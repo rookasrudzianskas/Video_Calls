@@ -157,5 +157,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         width: 200,
         height: 200,
+        justifyContent: 'center',
+        alignItems: 'center',
     }
 });
