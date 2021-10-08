@@ -32,7 +32,7 @@ const menuIcons = [
 const MeetingRoom = () => {
     const [name, setName] = useState('');
     const [roomId, setRoomId] = useState('');
-    const [activeUsers, setActiveUsers] = useState(["Naz", "Rokas"]);
+    const [activeUsers, setActiveUsers] = useState([]);
     const [startCamera, setStartCamera] = useState(false);
     const [type, setType] = useState(Camera.Constants.Type.back);
 
@@ -57,7 +57,7 @@ const MeetingRoom = () => {
         socket.on('connection', () => console.log("Connected 🚀"));
         socket.on('all-users', users => {
             // console.log("Active users");
-            // setActiveUsers(users);
+            setActiveUsers(users);
         });
         // console.log('hello?');
     },[]);
