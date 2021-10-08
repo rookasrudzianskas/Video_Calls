@@ -5,7 +5,7 @@ import ChatHeader from "./ChatHeader";
 const Chat = ({setModalVisible}) => {
     return (
         <View style={styles.container}>
-            <ChatHeader />
+            <ChatHeader setModalVisible={setModalVisible} />
         </View>
     );
 };
