@@ -67,7 +67,7 @@ const MeetingRoom = () => {
                 {startCamera ? (
                     <SafeAreaView style={{flex: 1,}}>
                             <View style={{flex: 1, backgroundColor: 'black', justifyContent: 'center'}}>
-                                <Camera style={styles.camera} type={type}>
+                                <Camera style={{height: activeUsers?.length === 0 ? 600 : 200, width: activeUsers?.length === 0 ? "100%" : 200 }} type={type}>
                                     <View style={styles.buttonContainer}>
                                         <TouchableOpacity
                                             style={styles.button}
@@ -128,11 +128,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#1c1c1c',
     },
-    camera: {
-        width: '100%',
-        height: 600,
-
-    },
     buttonContainer: {
         flex: 1,
         backgroundColor: 'transparent',
@@ -158,6 +153,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
     },
     activeUserContainer: {
-
+        borderColor: 'gray',
+        borderWidth: 1,
+        width: 200,
+        height: 200,
     }
 });
