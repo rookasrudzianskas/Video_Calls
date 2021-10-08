@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#1c1c1c'
     },
     chatMessages: {
-
+        flex: 1,
     },
     chatFormContainer: {
         borderColor: '#2f2f2f',
