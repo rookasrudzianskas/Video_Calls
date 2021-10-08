@@ -131,6 +131,21 @@ const MeetingRoom = () => {
                                         }}>{icon?.title}</Text>
                                     </TouchableOpacity>
                                 ))}
+
+                                <TouchableOpacity style={{
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    height: 50,
+                                    marginTop: 15,
+                                }} activeOpacity={0.8}>
+                                    <FontAwesome name="comment" size={24} color="#efefef" />
+                                    <Text style={{
+                                        color: 'white',
+                                        marginTop: 10,
+
+                                    }}>Chat</Text>
+                                </TouchableOpacity>
+
                             </View>
 
                     </SafeAreaView>
