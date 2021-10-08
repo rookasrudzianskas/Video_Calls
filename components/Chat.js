@@ -16,7 +16,7 @@ const Chat = ({setModalVisible}) => {
                     <View style={styles.chatFormContainer}>
                         <Text style={{color: 'white'}}>Send to: Everyone</Text>
                         <View style={styles.chatForm}>
-                            <TextInput value={messageText} onChangeText={(text) => setMessageText(text)} placeholder="Tap here to chat" style={styles.textInput} />
+                            <TextInput placeholderTextColor={'#efefef'} value={messageText} onChangeText={(text) => setMessageText(text)} placeholder="Tap here to chat" style={styles.textInput} />
                         </View>
                     </View>
                 </SafeAreaView>
