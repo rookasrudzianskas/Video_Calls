@@ -4,11 +4,11 @@ import ChatHeader from "./ChatHeader";
 
 const Chat = ({setModalVisible}) => {
     return (
-        <SafeAreaView>
             <View style={styles.container}>
-                <ChatHeader setModalVisible={setModalVisible} />
+                <SafeAreaView style={{height: '100%'}}>
+                    <ChatHeader setModalVisible={setModalVisible} />
+                </SafeAreaView>
             </View>
-        </SafeAreaView>
     );
 };
 
