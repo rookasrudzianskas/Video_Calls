@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
+        paddingVertical: 20,
+        paddingHorizontal: 10,
     },
     heading: {
         color: 'white',
