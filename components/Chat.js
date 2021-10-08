@@ -19,14 +19,8 @@ const Chat = ({setModalVisible}) => {
                         <View style={styles.chatForm}>
                             <TextInput placeholderTextColor={'#595859'} value={messageText} onChangeText={(text) => setMessageText(text)} placeholder="Tap here to chat" style={styles.textInput} />
                             <TouchableOpacity style={{
-                                height: 40,
-                                width: 40,
-                                marginTop: 12,
-                                marginLeft: 12,
-                                backgroundColor: '#373838',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                borderRadius: 10,
+                                ...styles.button,
+                                backgroundColor: messageText ? '#0B71EB' : '#373838'
                             }}>
                                 <FontAwesome name="send" size={24} color="#efefef" />
                             </TouchableOpacity>
@@ -64,5 +58,15 @@ const styles = StyleSheet.create({
         padding: 10,
         marginTop: 12,
         flex: 1,
+    },
+    button: {
+        height: 40,
+        width: 40,
+        marginTop: 12,
+        marginLeft: 12,
+        backgroundColor: '#373838',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
     }
 });
