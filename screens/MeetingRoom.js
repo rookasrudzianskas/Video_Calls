@@ -133,7 +133,7 @@ const MeetingRoom = () => {
                                 ))}
 
                                 {/* chat */}
-                                <TouchableOpacity style={{
+                                <TouchableOpacity onPress={() => setModalVisible(true)} style={{
                                     justifyContent: 'center',
                                     alignItems: 'center',
                                     height: 50,
