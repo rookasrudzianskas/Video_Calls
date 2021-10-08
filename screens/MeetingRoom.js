@@ -74,7 +74,7 @@ const MeetingRoom = () => {
                         <Modal
                             transparent={false}
                             presentationStyle={"fullScreen"}
-                            visible={Modal}
+                            visible={modalVisible}
                             animationType={'slide'}>
 
                         </Modal>
