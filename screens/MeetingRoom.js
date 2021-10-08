@@ -84,6 +84,12 @@ const MeetingRoom = () => {
                                         </TouchableOpacity>
                                     </View>
                                 </Camera>
+
+                                {activeUsers.map((user, index) => (
+                                    <View key={index} style={styles.activeUserContainer}>
+                                        <Text style={{}}>{user}</Text>
+                                    </View>
+                                ))}
                             </View>
 
                             <View style={styles.menu}>
@@ -151,4 +157,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
     },
+    activeUserContainer: {
+
+    }
 });
