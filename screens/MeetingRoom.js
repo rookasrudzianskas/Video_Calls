@@ -78,7 +78,7 @@ const MeetingRoom = () => {
 
                             animationType={'slide'}
                             onRequestClose={() => {
-                                setModalVisible=(!modalVisible);
+                                setModalVisible(!modalVisible);
                             }}
                         >
 
@@ -132,6 +132,7 @@ const MeetingRoom = () => {
                                     </TouchableOpacity>
                                 ))}
 
+                                {/* chat */}
                                 <TouchableOpacity style={{
                                     justifyContent: 'center',
                                     alignItems: 'center',
@@ -145,6 +146,7 @@ const MeetingRoom = () => {
 
                                     }}>Chat</Text>
                                 </TouchableOpacity>
+
 
                             </View>
 
