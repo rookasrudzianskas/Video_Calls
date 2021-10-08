@@ -5,6 +5,7 @@ import {io} from 'socket.io-client';
 import {Camera} from "expo-camera";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { Alert, Modal, Pressable } from "react-native";
+import Chat from "../components/Chat";
 
 
 const menuIcons = [
@@ -82,7 +83,10 @@ const MeetingRoom = () => {
                             }}
                         >
 
-                            <Text>Hello</Text>
+                            <Chat
+                                setModalVisible={setModalVisible}
+                                modalVisible={modalVisible}
+                            />
 
                         </Modal>
 
