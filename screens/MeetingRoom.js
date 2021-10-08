@@ -75,7 +75,12 @@ const MeetingRoom = () => {
                             transparent={false}
                             presentationStyle={"fullScreen"}
                             visible={modalVisible}
-                            animationType={'slide'}>
+
+                            animationType={'slide'}
+                            onRequestClose={() => {
+                                setModalVisible=(!modalVisible);
+                            }}
+                        >
 
                         </Modal>
 
