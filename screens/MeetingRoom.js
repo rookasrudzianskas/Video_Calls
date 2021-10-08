@@ -32,7 +32,7 @@ const menuIcons = [
 const MeetingRoom = () => {
     const [name, setName] = useState('');
     const [roomId, setRoomId] = useState('');
-    const [activeUsers, setActiveUsers] = useState(["Naz", "Rokas", "Joey"]);
+    const [activeUsers, setActiveUsers] = useState(["Naz", "Rokas"]);
     const [startCamera, setStartCamera] = useState(false);
     const [type, setType] = useState(Camera.Constants.Type.back);
 
@@ -57,7 +57,7 @@ const MeetingRoom = () => {
         socket.on('connection', () => console.log("Connected 🚀"));
         socket.on('all-users', users => {
             // console.log("Active users");
-            setActiveUsers(users);
+            // setActiveUsers(users);
         });
         // console.log('hello?');
     },[]);
@@ -87,7 +87,7 @@ const MeetingRoom = () => {
 
                                 {activeUsers.map((user, index) => (
                                     <View key={index} style={styles.activeUserContainer}>
-                                        <Text style={{}}>{user}</Text>
+                                        <Text style={{color: 'white'}}>{user}</Text>
                                     </View>
                                 ))}
                             </View>
