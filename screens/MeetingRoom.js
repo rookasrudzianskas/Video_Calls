@@ -87,7 +87,7 @@ const MeetingRoom = () => {
                                     </View>
                                 </Camera>
 
-                                {activeUsers.map((user, index) => (
+                                {activeUsers.filter(user => (user.userName !== name)).map((user, index) => (
                                     <View key={index} style={styles.activeUserContainer}>
                                         <Text style={{color: 'white'}}>{user?.userName}</Text>
                                     </View>
