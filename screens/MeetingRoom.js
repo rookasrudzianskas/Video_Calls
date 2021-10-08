@@ -56,7 +56,7 @@ const MeetingRoom = () => {
         socket = io(`${API_URL}`);
         socket.on('connection', () => console.log("Connected 🚀"));
         socket.on('all-users', users => {
-            users = users.filter(user => (user.userName !== name));
+            users = users.filter(user => (user.userName != name));
             console.log(users);
             setActiveUsers(users);
         });
@@ -87,7 +87,7 @@ const MeetingRoom = () => {
                                     </View>
                                 </Camera>
 
-                                {activeUsers.filter(user => (user.userName !== name)).map((user, index) => (
+                                {activeUsers.filter(user => (user.userName != name)).map((user, index) => (
                                     <View key={index} style={styles.activeUserContainer}>
                                         <Text style={{color: 'white'}}>{user?.userName}</Text>
                                     </View>
