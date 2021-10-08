@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, View, StyleSheet, Pressable} from 'react-native';
+import Entypo from "react-native-vector-icons/Entypo";
 
 const ChatHeader = ({setModalVisible}) => {
     return (
@@ -8,6 +9,7 @@ const ChatHeader = ({setModalVisible}) => {
                 <Text style={styles.buttonText}>Close</Text>
             </Pressable>
             <Text style={styles.heading}>Chat</Text>
+            <Entypo name="bell" size={24} color="#efefef" />
         </View>
     );
 };
