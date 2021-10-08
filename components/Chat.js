@@ -26,6 +26,7 @@ const Chat = ({setModalVisible}) => {
                                 backgroundColor: '#373838',
                                 justifyContent: 'center',
                                 alignItems: 'center',
+                                borderRadius: 10,
                             }}>
                                 <FontAwesome name="send" size={24} color="#efefef" />
                             </TouchableOpacity>
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     chatForm: {
-
+        flexDirection: "row",
     },
     textInput: {
         height: 40,
