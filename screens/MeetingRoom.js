@@ -82,6 +82,8 @@ const MeetingRoom = () => {
                             }}
                         >
 
+                            <Text>Hello</Text>
+
                         </Modal>
 
                         {/* active users section */}
