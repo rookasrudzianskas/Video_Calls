@@ -3,7 +3,7 @@ import {Text, View, StyleSheet} from 'react-native';
 
 const Chat = () => {
     return (
-        <View>
+        <View style={styles.container}>
 
         </View>
     );
