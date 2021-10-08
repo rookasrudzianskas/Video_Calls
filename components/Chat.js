@@ -18,7 +18,15 @@ const Chat = ({setModalVisible}) => {
                         <Text style={{color: 'white'}}>Send to: Everyone</Text>
                         <View style={styles.chatForm}>
                             <TextInput placeholderTextColor={'#595859'} value={messageText} onChangeText={(text) => setMessageText(text)} placeholder="Tap here to chat" style={styles.textInput} />
-                            <TouchableOpacity>
+                            <TouchableOpacity style={{
+                                height: 40,
+                                width: 40,
+                                marginTop: 12,
+                                marginLeft: 12,
+                                backgroundColor: '#373838',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}>
                                 <FontAwesome name="send" size={24} color="#efefef" />
                             </TouchableOpacity>
                         </View>
