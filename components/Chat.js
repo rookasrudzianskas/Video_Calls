@@ -43,6 +43,10 @@ const styles = StyleSheet.create({
 
     },
     textInput: {
-
+        height: 40,
+        color: '#efefef',
+        borderColor: '#585859',
+        borderWidth: 1,
+        borderRadius: 10,
     }
 });
