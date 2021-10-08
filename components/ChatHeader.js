@@ -3,7 +3,7 @@ import {Text, View, StyleSheet} from 'react-native';
 
 const ChatHeader = () => {
     return (
-        <View>
+        <View style={styles.container}>
 
         </View>
     );
@@ -12,5 +12,7 @@ const ChatHeader = () => {
 export default ChatHeader;
 
 const styles = StyleSheet.create({
+    container: {
 
+    }
 });
