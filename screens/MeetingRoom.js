@@ -32,8 +32,8 @@ const menuIcons = [
 const MeetingRoom = () => {
     const [name, setName] = useState('');
     const [roomId, setRoomId] = useState('');
-    const [activeUsers, setActiveUsers] = useState();
-    const [startCamera, setStartCamera] = useState(true);
+    const [activeUsers, setActiveUsers] = useState(["Naz", "Rokas", "Joey"]);
+    const [startCamera, setStartCamera] = useState(false);
     const [type, setType] = useState(Camera.Constants.Type.back);
 
 
