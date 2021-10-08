@@ -68,6 +68,13 @@ const MeetingRoom = () => {
             <View style={styles.container}>
                 {startCamera ? (
                     <SafeAreaView style={{flex: 1,}}>
+
+
+
+
+
+
+                        {/* active users section */}
                         <View style={{flex: 1, justifyContent: 'center', width: '100%'}}>
                             <View style={{ backgroundColor: 'black', justifyContent: 'center', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', }}>
                                 <Camera style={{height: activeUsers?.length  <= 1 ? 600 : 200, width: activeUsers?.length <= 1 ? "100%" : 200 }} type={type}>
