@@ -64,15 +64,20 @@ const MeetingRoom = () => {
         // console.log('hello?');
     },[]);
 
+    const [modalVisible, setModalVisible] = useState(false);
+
     return (
             <View style={styles.container}>
                 {startCamera ? (
                     <SafeAreaView style={{flex: 1,}}>
 
+                        <Modal
+                            transparent={false}
+                            presentationStyle={"fullScreen"}
+                            visible={Modal}
+                            animationType={'slide'}>
 
-
-
-
+                        </Modal>
 
                         {/* active users section */}
                         <View style={{flex: 1, justifyContent: 'center', width: '100%'}}>
