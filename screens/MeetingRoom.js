@@ -4,6 +4,8 @@ import StartMeeting from "../components/StartMeeting";
 import {io} from 'socket.io-client';
 import {Camera} from "expo-camera";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
+import { Alert, Modal, Pressable } from "react-native";
+
 
 const menuIcons = [
     {
