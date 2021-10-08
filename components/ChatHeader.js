@@ -19,6 +19,7 @@ export default ChatHeader;
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
+        justifyContent: 'space-between',
     },
     heading: {
         color: 'white',
