@@ -25,8 +25,11 @@ const styles = StyleSheet.create({
     },
     heading: {
         color: 'white',
+        fontSize: 20,
+        fontWeight: '700',
     },
     buttonText: {
         color: 'white',
+        fontSize: 20,
     }
 });
