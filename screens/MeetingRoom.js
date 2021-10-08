@@ -56,7 +56,6 @@ const MeetingRoom = () => {
         socket = io(`${API_URL}`);
         socket.on('connection', () => console.log("Connected 🚀"));
         socket.on('all-users', users => {
-            // console.log("Active users");
             setActiveUsers(users);
         });
         // console.log('hello?');
@@ -88,7 +87,7 @@ const MeetingRoom = () => {
 
                                 {activeUsers.map((user, index) => (
                                     <View key={index} style={styles.activeUserContainer}>
-                                        <Text style={{color: 'white'}}>{user}</Text>
+                                        <Text style={{color: 'white'}}>{user?.userName}</Text>
                                     </View>
                                 ))}
                             </View>
